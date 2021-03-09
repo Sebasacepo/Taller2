@@ -7,17 +7,26 @@ número de horas del empleado)*/
 
 console.log("Bienvenido a postobón")
 
-let horaTraba=20000
-let horaExtra=25000
-let nroHora=20
-let nroHoraExtra=20
+const horaTraba=20000
+const horaExtra=25000
+let nroHora=45
+
 
 if (nroHora<=40){
     console.log("no tiene horas extra trabajadas")
     PagaTotal=nroHora*horaTraba;
     console.log(`Su paga es de: ${PagaTotal}`);
 }else if (nroHora>=41) {
-    HoraExtra= nroHora-40;
-    console.log(`Usted trabajó ${HoraExtra} horas extra`); 
+    nroExtra= nroHora-40;
+    valorHoraExtra=nroExtra*horaExtra
+    nroHoraNoExtra=nroHora-nroExtra
+    valorHorasLaborales=nroHoraNoExtra*horaTraba
+    totalSalario=valorHoraExtra+valorHorasLaborales
+
+    console.log(`Usted trabajó ${nroExtra} horas extra`); 
+    console.log(`Valor de las horas extra: ${valorHoraExtra}`)
+    console.log(`Horas laborales: ${nroHoraNoExtra}`)
+    console.log(`Su salario es de: ${totalSalario} vaya a reclamar mijo`)
     
+
 } 
