@@ -20,4 +20,4 @@ else if(ciudadConcierto==ciudad4) {
     console.log("Barranquilla Agosto 28")
 }
 else {
-    console.log ("Digite nuevamente la ciudad")
+    console.log ("Digite nuevamente la ciudad")}
